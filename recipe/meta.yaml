@@ -18,11 +18,13 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - hatch
   run:
     - python >={{ python_min }}
     - numpy
     - matplotlib-base
     - pandas
+    - hatch
 
 test:
   imports:
