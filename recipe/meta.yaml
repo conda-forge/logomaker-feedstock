@@ -1,5 +1,5 @@
 {% set name = "logomaker" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/logomaker-{{ version }}.tar.gz
-  sha256: 7c92397f8fedb2ce95479213384664bead6b3e6d0b1d0a4602a9a2745aefcebe
+  sha256: 3f477ddc714c721a46682c8580d0a8f3d84c7093e9e1f50dea20820f90db6cb0
 
 build:
   noarch: python
@@ -18,11 +18,13 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - hatch
   run:
     - python >={{ python_min }}
     - numpy
     - matplotlib-base
     - pandas
+    - hatch
 
 test:
   imports:
