@@ -1,5 +1,5 @@
 {% set name = "logomaker" %}
-{% set version = "0.8.6" %}
+{% set version = "0.8.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/logomaker-{{ version }}.tar.gz
-  sha256: e436a83c9bf5e39974b2f342524c904518746c165aef5153445aa6a27ff1f762
+  sha256: 63783ce6e24449d6f1f01ce29c4ae1b91f6e54bc198e5da40ad18fcd0efc3302
 
 build:
   noarch: python
